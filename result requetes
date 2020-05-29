@@ -1,0 +1,23 @@
+USE wild_db_quest;
+INSERT INTO school 
+(name, capacity, country ) 
+values 
+('Beauxbatons Academy of Magic','France','550'),
+('Castelobruxo,Brazil', 'Brazil','380'),
+('Durmstrang Institute','Norway','570'),
+('Hogwarts School of Witchcraft and Wizardry','United Kingdom','450'),
+('Koldovstoretz', 'Russia' ,'125'),
+('Mahoutokoro School of Magic','Japan' ,'800'),
+('Uagadou School of Magic','Uganda','350');
+UPDATE school SET country='Sweden' WHERE name='Durmstrang Institute';
+UPDATE school SET capacity='700' WHERE name='Mahoutokoro School of Magic';
+DELETE FROM school WHERE name like '%Magic%';
+select * from school;
+--------------------------------------------------------------------------------
+
+'2', 'Castelobruxo,Brazil', '380', 'Brazil'
+'3', 'Durmstrang Institute', '570', 'Sweden'
+'4', 'Hogwarts School of Witchcraft and Wizardry', '450', 'United Kingdom'
+'5', 'Koldovstoretz', '125', 'Russia'
+
+--------------------------------------------------------------------------------
